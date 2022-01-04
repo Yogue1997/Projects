@@ -31,6 +31,10 @@ a{
     color: white;
 }
 
+a:hover{
+    color: cyan;
+}
+
 body {
     min-height: 100vh;
     background-image: url(https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_1280.jpg);
