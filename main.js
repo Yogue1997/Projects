@@ -6,10 +6,12 @@ const nationality = document.getElementById('nationality')
 const birthDate = document.getElementById('birthDate')
 const heightWeight = document.getElementById('height&weight')
 
-// let player = []
+// action on the search button
 button.addEventListener('click', () => {
+    //getting value from user to make a serach in the api
     let usr = input.value
     let url = `https://soccer.sportmonks.com/api/v2.0/players/search/${usr}?api_token=qCpK2kLovUUMFhi04j9a44WsB50cCnzWcy8hcbftMXzOV8iJ2pBIVPQjok3f`
+    //promises method to get the infos from the api
     fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -20,7 +22,7 @@ button.addEventListener('click', () => {
         let birth = data.data[0].birthdate
         let playerPic = data.data[0].image_path
         
-        //
+        //diplay results
         fullName.innerText = `Name: ${fullN}`
         nationality.innerText = `Nationality: ${nat}`
         heightWeight.innerText = `Height and Weight = ${height} , ${weight}`
