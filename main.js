@@ -1,6 +1,7 @@
 const button = document.querySelector('button')
 const input = document.getElementById('input')
 const output = document.querySelector('h3')
+const outPic = document.querySelector('h1')
 const fullName = document.getElementById('fullName')
 const nationality = document.getElementById('nationality')
 const birthDate = document.getElementById('birthDate')
@@ -28,12 +29,14 @@ button.addEventListener('click', () => {
         heightWeight.innerText = `Height and Weight = ${height} , ${weight}`
         birthDate.innerText = `Birth Date: ${birth}`
         output.innerHTML = `<img src=${playerPic}>`
+        outPic.innerHTML = `<img id="img" src=${playerPic}>`
         
     })
     .catch((error) =>{
         console.log(error);
     })
 })
+
 
 
 
