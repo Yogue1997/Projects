@@ -11,7 +11,7 @@ const heightWeight = document.getElementById('height&weight')
 button.addEventListener('click', () => {
     //getting value from user to make a serach in the api
     let usr = input.value
-    let url = `https://soccer.sportmonks.com/api/v2.0/players/search/${usr}?api_token=qCpK2kLovUUMFhi04j9a44WsB50cCnzWcy8hcbftMXzOV8iJ2pBIVPQjok3f`
+    let url = `https://soccer.sportmonks.com/api/v2.0/players/search/${usr}?api_token=Xr0A62YZGlP3S4msTJwT1f9a21xznKhPwLw0qQ4nQ8vq0cFu1uSGb9gr2wgo`
     //promises method to get the infos from the api
     fetch(url)
     .then((res) => res.json())
